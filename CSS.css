@@ -1,0 +1,114 @@
+/*html {
+	filter: grayscale(100%);
+}*/
+
+body {
+	margin: 0px;
+	font-family: Arial, sans-serif;
+}
+
+.nav {
+  height: 100%;
+  width: 225px; /* 200 was nice*/
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #291B12;
+  overflow-x: hidden;
+  padding-top: 20px;
+  text-align: left;
+}
+/* Code is based on https://www.w3schools.com/howto/howto_css_fixed_sidebar.asp */
+
+.nav a{
+	padding: 6px 8px 20px 16px;
+	text-decoration: none;
+	font-size: 42px;
+	color: #FDF4C9;
+	display: block;
+}
+/* Code is based on https://www.w3schools.com/howto/howto_css_fixed_sidebar.asp */
+
+
+.nav a:hover{
+	color: #C19B52;
+}
+
+.nav div {
+	color: #FDF4C9;
+	padding: 6px 8px 6px 16px;
+	display: block;
+	bottom: 5px;
+	position: absolute;
+}
+
+.nav div a {
+	text-decoration: none;
+	display: inline-block;
+	padding: 0px 6px 0px 0px;
+}
+
+.nav div a img {
+	height: 50px;
+}
+
+.nav div p {
+	margin: 10px 0px;
+	line-height: 1.5;
+}
+
+.nav div a img:hover{
+	opacity: 0.6;
+}
+.contact {
+	font-size: 18px;
+	text-decoration: underline;
+}
+
+.copyright {
+	font-size: 15px;
+	font-style: italic;
+	padding-bottom: 5px;
+}
+
+@media screen and (max-width: 700px) {
+	.nav {
+		width: 125px;
+  }
+  .nav a {
+		font-size: 25px;
+	  	padding: 6px 8px 20px 5px;
+  }
+  .nav div {
+		color: #FDF4C9;
+		padding: 6px 8px 6px 5px;
+		display: block;
+		bottom: 5px;
+		position: absolute;
+}
+  .nav div p {
+		margin: 10px 0px;
+		line-height: 1.5;
+		font-size: 10px;
+}
+
+.contact {
+		font-size: 15px;
+		text-decoration: underline;
+}
+
+  .nav div a {
+	text-decoration: none;
+	display: inline-block;
+	padding: 0px 3px 0px 0px;
+}
+  .nav div a img {
+		height: 32px;
+}
+	.copyright {
+		font-size: 10px;
+		font-style: italic;
+		padding-bottom: 5px;
+	}
+}
